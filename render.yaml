@@ -9,6 +9,8 @@ services:
     autoDeployTrigger: commit
 
     envVars:
+      - key: ALLOW_NETHER
+        value: "false"
       - key: EULA
         value: "TRUE"
       - key: TYPE
@@ -26,7 +28,7 @@ services:
       - key: MAX_MEMORY
         value: 256M
       - key: JVM_OPTS
-  value: "-XX:+UseSerialGC -XX:ActiveProcessorCount=1 -Xss1m -XX:MaxMetaspaceSize=96M -XX:MaxDirectMemorySize=48M -XX:ReservedCodeCacheSize=12M"
+        value: "-XX:+UseSerialGC -XX:ActiveProcessorCount=1 -Xss1m -XX:MaxMetaspaceSize=96M -XX:MaxDirectMemorySize=48M -XX:ReservedCodeCacheSize=12M"
       - key: MALLOC_ARENA_MAX
         value: "1"
       - key: CLEAN_SERVER_LIBRARIES
