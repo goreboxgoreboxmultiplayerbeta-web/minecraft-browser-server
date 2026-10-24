@@ -48,7 +48,7 @@ services:
       - key: PVP
         value: "true"
       - key: MAX_PLAYERS
-        value: "8"
+        value: "2"
       - key: VIEW_DISTANCE
         value: "4"
       - key: SPAWN_PROTECTION
