@@ -9,6 +9,8 @@ services:
     autoDeployTrigger: commit
 
     envVars:
+      - key: OPS
+      value: "YourMinecraftNick"
       - key: ALLOW_NETHER
         value: "false"
       - key: EULA
